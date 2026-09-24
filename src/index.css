@@ -4,6 +4,24 @@
 @theme {
   --font-sans: 'Geist', sans-serif;
   --font-urbanist: 'Urbanist', sans-serif;
+
+  --color-cream-50: #fff8e7;
+  --color-amber-100: #fdf0d5;
+  --color-amber-300: #f2c94c;
+  --color-amber-500: #e8a317;
+  --color-amber-600: #c6890b;
+  --color-amber-700: #8f5c0c;
+  --color-brown-800: #6b4a2b;
+  --color-brown-900: #2b1b0e;
+
+  --color-text-primary: var(--color-brown-900);
+  --color-text-secondary: var(--color-brown-800);
+  --color-text-muted: #8b6f47;
+  --color-text-link: var(--color-amber-700);
+  --color-text-inverse: #ffffff;
+
+  --color-button-primary-bg: var(--color-amber-500);
+  --color-button-primary-bg-hover: var(--color-amber-600);
 }
 
 @layer base {
