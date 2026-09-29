@@ -8,7 +8,7 @@ export const SHADOW_SIZE = BEE_SIZE * 0.92
 const OFFSCREEN_MARGIN_TOP = 60 // extra px above the screen where the bee starts
 const OFFSCREEN_MARGIN_BOTTOM = 50 // extra px below the screen where the bee ends
 const SWAY_REACH_RATIO = 0.4 // max sideways swing, as a fraction of screen width
-const MAX_SWAY_REACH = 200 // px, the sway never goes wider than this
+const MAX_SWAY_REACH = 150 // px, the sway never goes wider than this
 
 // Tilt
 const MAX_TILT = 14 // degrees
@@ -26,8 +26,9 @@ const SHADOW_FLATTEN = 0.5 // squashes the shadow into an oval
 const SHADOW_OPACITY = 0.5 // opacity on the ground
 const SHADOW_OPACITY_DROP = 0.2 // how much fainter it gets at full altitude
 
+// Shift
 const PATH_SHIFT_RATIO = 0.4 // shift as a fraction of screen width: positive = right, negative = left
-const MAX_PATH_SHIFT = 500 // px, the shift never grows past this
+const MAX_PATH_SHIFT = 400 // px, the shift never grows past this
 
 export const getFlightPath = () => {
   const pathShift = gsap.utils.clamp(-MAX_PATH_SHIFT, MAX_PATH_SHIFT, window.innerWidth * PATH_SHIFT_RATIO)
